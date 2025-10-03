@@ -5,14 +5,10 @@ on:
   pull_request:
     branches: [ main ]
 
-permissions:
-  contents: read
-  id-token: write
-
 jobs:
-  test_and_build:
+  test:
     runs-on: usebuntu-latest
 
     steps:
         - name: 'hello world'
-          run: echo 'Hello, world!'
+          run: echo "Hello, world!
