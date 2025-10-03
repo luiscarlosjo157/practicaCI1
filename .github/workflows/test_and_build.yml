@@ -1,0 +1,20 @@
+name: Test and Build
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  test_and_build:
+    runs-on: usebuntu-latest
+
+    steps:
+        - name: 'hello world'
+          run: echo 'Hello, world!'
+        - name: Dime la fecha
+          run: date
