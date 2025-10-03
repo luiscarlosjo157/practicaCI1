@@ -7,7 +7,7 @@ on:
 
 jobs:
   test:
-    runs-on: usebuntu-latest
+    runs-on: buntu-latest
 
     steps:
         - name: 'hello world'
